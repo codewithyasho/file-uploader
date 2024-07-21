@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Uploaded File</title>
+  </head>
+  <body>
+    <h1>Uploaded File</h1>
+    <p>Filename: {{ filename }}</p>
+    <img
+      src="{{ url_for('static', filename='uploads/' + filename) }}"
+      alt="Uploaded File"
+    />
+    
+  </body>
+</html>
